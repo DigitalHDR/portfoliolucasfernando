@@ -11,18 +11,21 @@ const config: Config = {
     './node_modules/tw-elements/js/**/*.js',
   ],
   theme: {
-    // colors: {
-    //   primary: 'var(--primary)',
-    // },
     extend: {
+      // icone SUN
       keyframes: {
         spin: {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
+        wheel: {
+          '0%': { transform: 'translateY(0)' },
+          '30%': { transform: 'translateY(60px)' },
+        },
       },
       animation: {
         spin: 'spin 5s linear infinite',
+        wheel: 'wheel 1s linear infinite',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

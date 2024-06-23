@@ -1,5 +1,6 @@
 'use client'
 import { useEffect } from 'react'
+import Perfil from './pages/Perfil'
 
 export default function Home() {
   useEffect(() => {
@@ -13,8 +14,8 @@ export default function Home() {
   }, [])
 
   return (
-    <main>
-      
+    <main className='container mx-auto'>
+      <Perfil />
     </main>
   )
 }
