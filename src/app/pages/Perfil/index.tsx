@@ -18,7 +18,7 @@ const Perfil: React.FC = () => {
       className="h-screen pt-[15%] flex flex-col justify-between relative"
       id="perfil"
     >
-      <div className="w-full flex flex-col md:flex-row items-center justify-between text-gray-500 sm:text-lg xl:text-2xl font-medium">
+      <article className="w-full flex flex-col md:flex-row items-center justify-between text-gray-500 sm:text-lg xl:text-2xl font-medium">
         <div className="md:mr-8">
           <div data-aos="fade-right" data-aos-delay="300">
             <Image
@@ -79,7 +79,7 @@ const Perfil: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <div>
         <div className="flex justify-center mb-5">
           <svg

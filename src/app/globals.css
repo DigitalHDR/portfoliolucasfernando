@@ -19,6 +19,18 @@ p {
   @apply leading-[1.6];
 }
 
+.span {
+  @apply text-lime-400;
+  @apply font-bold;
+}
+
+h2 {
+  @apply text-lime-400;
+  @apply text-4xl;
+  @apply font-bold;
+  @apply mb-12;
+}
+
 
 /* @tailwind base;
 @tailwind components;

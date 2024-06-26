@@ -1,6 +1,7 @@
 'use client'
 import { useEffect } from 'react'
 import Perfil from './pages/Perfil'
+import Sobre from './pages/Sobre'
 
 export default function Home() {
   useEffect(() => {
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main className='container mx-auto'>
       <Perfil />
+      <Sobre />
     </main>
   )
 }
