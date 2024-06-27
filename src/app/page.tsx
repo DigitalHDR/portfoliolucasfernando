@@ -2,6 +2,7 @@
 import { useEffect } from 'react'
 import Perfil from './pages/Perfil'
 import Sobre from './pages/Sobre'
+import Skill from './pages/Skill'
 
 export default function Home() {
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function Home() {
     <main className='container mx-auto'>
       <Perfil />
       <Sobre />
+      <Skill />
     </main>
   )
 }
