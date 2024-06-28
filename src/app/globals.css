@@ -29,6 +29,23 @@ h2 {
   @apply text-4xl;
   @apply font-bold;
   @apply mb-12;
+  @apply text-center;
+}
+
+/* config do css do slider */
+.slick-dots li button:before {
+  font-size: 10px;
+  line-height: 30px;
+  color: rgb(19, 19, 18) !important;
+}
+.slick-dots li.slick-active button:before {
+  color: rgb(19, 19, 18) !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  opacity: 1;
+  color: rgb(19, 19, 18) !important;
 }
 
 

@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import Perfil from './pages/Perfil'
 import Sobre from './pages/Sobre'
 import Skill from './pages/Skill'
+import Certificados from './pages/Certificados'
 
 export default function Home() {
   useEffect(() => {
@@ -20,6 +21,7 @@ export default function Home() {
       <Perfil />
       <Sobre />
       <Skill />
+      <Certificados />
     </main>
   )
 }
