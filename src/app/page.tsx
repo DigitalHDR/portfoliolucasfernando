@@ -4,6 +4,7 @@ import Perfil from './pages/Perfil'
 import Sobre from './pages/Sobre'
 import Skill from './pages/Skill'
 import Certificados from './pages/Certificados'
+import Projetos from './pages/Projetos'
 
 export default function Home() {
   useEffect(() => {
@@ -18,10 +19,11 @@ export default function Home() {
 
   return (
     <main className='container mx-auto'>
-      <Perfil />
-      <Sobre />
-      <Skill />
-      <Certificados />
+      {/* <Perfil /> */}
+      {/* <Sobre /> */}
+      {/* <Skill /> */}
+      {/* <Certificados /> */}
+      <Projetos />
     </main>
   )
 }

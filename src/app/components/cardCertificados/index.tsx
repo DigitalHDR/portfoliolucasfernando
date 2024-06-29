@@ -13,7 +13,7 @@ const CardCertificados = () => {
           {dataCertificado.certificado.map((item, index) => (
             <div
               key={index}
-              className="!flex flex-col max-w-[95%] md:max-w-[200px] bg-slate-50 border-solid border-lime-700 border-[1px] rounded-lg py-2 px-2 my-7"
+              className="!flex flex-col max-w-[95%] md:max-w-[200px] bg-slate-50 border-solid border-lime-400 border-[1px] rounded-lg py-2 px-2 my-7"
             >
               <img
                 className="w-full rounded-lg"
