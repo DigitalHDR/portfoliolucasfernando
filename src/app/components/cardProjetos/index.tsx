@@ -39,33 +39,45 @@ const CardProjetos: React.FC<CardProjetosProps> = ({ data }) => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center max-w-60 bg-neutral-700 px-3 py-3 transition duration-300 ease-in-out hover:scale-110 hover:border-[1px] my-5 rounded-lg  border-lime-400 hover:shadow-lg hover:shadow-lime-400">
+    <div className="flex flex-col justify-center items-center max-w-60 bg-neutral-700 sm:px-3 sm:py-3 transition duration-300 ease-in-out hover:scale-110 hover:border-[1px] my-5 rounded-lg  border-lime-400 hover:shadow-lg hover:shadow-lime-400">
       <div className="relative h-auto border-solid boder-[2px] border-lime-400">
-        <img className="w-[218px] h-[127px] rounded-[15px] px-1 py-1" src={data.img} alt={data.title} />
-        <div className="absolute right-[4px] top-[38px] w-16 rounded-[40px] bg-black flex justify-center items-center border-solid boder-[1px] border-lime-400">
-          <div className="text-lime-400 text-lg font-extrabold">{data.id}</div>
+        <img
+          className="w-[218px] h-auto sm:h-[127px] rounded-[15px] px-1 py-1"
+          src={data.img}
+          alt={data.title}
+        />
+        <div className="absolute right-[4px] top-[38px] w-8 sm:w-16 rounded-[40px] bg-black flex justify-center items-center border-solid boder-[1px] border-lime-400">
+          <div className="text-lime-400 text-sm sm:text-lg sm:font-extrabold">
+            {data.id}
+          </div>
         </div>
       </div>
 
-      <div className="w-full text-center text-white pt-1 mt-1">
+      <div className="w-full text-center text-white text-sm sm:text-lg pt-1 mt-1">
         {data.star === 5 ? (
-          <div className="flex justify-center text-center items-center mr-1">
+          <div className="flex justify-center  text-center items-center mr-1">
             <div>Top</div> {stars}
           </div>
         ) : (
-          <div className='flex justify-center text-center items-center mr-1'>{stars}</div>
+          <div className="flex justify-center text-center items-center mr-1">
+            {stars}
+          </div>
         )}
-        <div className="flex items-center justify-evenly">
-          <div className='flex-grow text-end'>{data.star}</div>
-          <div className='flex-grow text-start text-xs relative bottom-[2px]'>
+        <div className="flex items-center justify-evenly ">
+          <div className="flex-grow text-end ">{data.star}</div>
+          <div className="flex-grow text-start relative bottom-[2px]">
             <MdOutlineStarPurple500 color="yellow" />
           </div>
         </div>{' '}
       </div>
 
       <div className="flex-grow">
-        <h5 className="text-center text-xl text-lime-400 font-extralight">{data.title}</h5>
-        <p className="text-white/60 font-extralight">{renderizarDescricao(data.desc)}</p>
+        <h5 className="text-center text-base sm:text-lg text-lime-400 font-extralight">
+          {data.title}
+        </h5>
+        <p className="text-white/60 font-extralight hidden sm:flex text-center">
+          {renderizarDescricao(data.desc)}
+        </p>
       </div>
 
       <Botao nome={'Visitar Projeto'} urlBtn={data.url} />

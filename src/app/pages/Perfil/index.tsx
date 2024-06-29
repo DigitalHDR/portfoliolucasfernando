@@ -78,7 +78,7 @@ const Perfil: React.FC = () => {
         </div>
       </article>
       <div>
-        <div className="flex justify-center mb-[50px]">
+        <div className="flex justify-center mb-[65px]">
           <svg
             width="26px"
             height="100%"
