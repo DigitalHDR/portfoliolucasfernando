@@ -22,7 +22,7 @@ const Skill: React.FC = () => {
                   onMouseEnter={() => setPassaMouseIndex(index)}
                   onMouseLeave={() => setPassaMouseIndex(null)}
                 >
-                  <Image src={item.img} width="100" height="100" alt="imagem" />
+                  <Image className='rounded-lg' src={item.img} width="100" height="100" alt="imagem" />
 
                   <div
                     className="absolute justify-center items-center w-full h-full bg-body-dark sm:rounded-sm md:rounded-lg"

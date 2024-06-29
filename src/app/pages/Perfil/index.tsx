@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import Image from 'next/image'
 import React from 'react'
@@ -15,20 +16,16 @@ const Perfil: React.FC = () => {
 
   return (
     <section
-      className="h-screen pt-[15%] flex flex-col justify-between relative"
+      className="h-screen pt-[15%] flex flex-col justify-between relative px-3"
       id="perfil"
     >
-      <article className="w-full flex flex-col md:flex-row items-center justify-between text-gray-500 sm:text-lg xl:text-2xl font-medium">
+      <article className="w-full flex flex-col md:flex-row items-center justify-between px-3 text-gray-500 sm:text-lg xl:text-2xl font-medium">
         <div className="md:mr-8">
           <div data-aos="fade-right" data-aos-delay="300">
-            <Image
+            <img
               className="w-64 md:w-[350px]"
               src="/lucas.png"
               alt="Descrição da imagem"
-              width={350}
-              height={370}
-              quality={100}
-              priority={true}
             />
           </div>
         </div>
@@ -73,7 +70,7 @@ const Perfil: React.FC = () => {
             </div>
 
             <div data-aos="fade-up" data-aos-duration="1000">
-              <div className="md:w-[400px] mt-10">
+              <div className="w-full  mt-10 ">
                 <MidiaSocial />
               </div>
             </div>
@@ -81,7 +78,7 @@ const Perfil: React.FC = () => {
         </div>
       </article>
       <div>
-        <div className="flex justify-center mb-5">
+        <div className="flex justify-center mb-[50px]">
           <svg
             width="26px"
             height="100%"

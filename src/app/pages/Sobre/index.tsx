@@ -3,7 +3,7 @@ import React from 'react'
 const Sobre: React.FC = () => {
   return (
     <section
-      className="mt-24 flex justify-center flex-col items-center mb-10"
+      className="mt-24 flex justify-center flex-col items-center mb-10 px-3"
       id="sobre"
     >
       <div data-aos="zoom-out" data-aos-delay="200">
@@ -11,7 +11,7 @@ const Sobre: React.FC = () => {
       </div>
 
       <div data-aos="zoom-in" data-aos-delay="400">
-        <article className="w-full md:w-[70%]  m-auto text-center py-5 px-8 rounded-lg border-double border-lime-400 border-[1px] shadow-lg shadow-slate-400">
+        <article className="w-full md:w-[70%] m-auto py-5 px-2 md:px-8 text-justify  rounded-lg border-double border-lime-400 border-[1px] shadow-lg shadow-slate-400">
           <p className=" text-gray-500 sm:text-lg xl:text-2xl font-medium">
             Sou um desenvolvedor <span className="span">web e mobile</span> com
             experiência em diversas tecnologias modernas. Trabalho
