@@ -19,10 +19,10 @@ export default function Home() {
 
   return (
     <main className='container mx-auto'>
-      {/* <Perfil /> */}
-      {/* <Sobre /> */}
-      {/* <Skill /> */}
-      {/* <Certificados /> */}
+      <Perfil />
+      <Sobre />
+      <Skill />
+      <Certificados />
       <Projetos />
     </main>
   )

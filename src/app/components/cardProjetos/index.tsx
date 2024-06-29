@@ -39,25 +39,25 @@ const CardProjetos: React.FC<CardProjetosProps> = ({ data }) => {
   }
 
   return (
-    <div className="flex flex-col w-full bg-slate-500 justify-center items-center px-3 transition duration-300 ease-in-out hover:scale-110 hover:border-[2px] my-5 rounded-lg  border-solid boder-[1px] border-lime-400 hover:shadow-lg hover:shadow-slate-400">
-      <div className="relative w-full h-[36%] overflow-hidden rounded-lg">
-        <img className="w-full h-full object-contain rounded-lg  mt-3" src={data.img} alt={data.title} />
-        <div className="absolute right-[3px] top-[38px] w-16 rounded-[40px] bg-black flex justify-center items-center border-solid boder-[1px] border-lime-400">
+    <div className="flex flex-col justify-center items-center max-w-60 bg-neutral-700 px-3 py-3 transition duration-300 ease-in-out hover:scale-110 hover:border-[1px] my-5 rounded-lg  border-lime-400 hover:shadow-lg hover:shadow-lime-400">
+      <div className="relative h-auto border-solid boder-[2px] border-lime-400">
+        <img className="w-[218px] h-[127px] rounded-[15px] px-1 py-1" src={data.img} alt={data.title} />
+        <div className="absolute right-[4px] top-[38px] w-16 rounded-[40px] bg-black flex justify-center items-center border-solid boder-[1px] border-lime-400">
           <div className="text-lime-400 text-lg font-extrabold">{data.id}</div>
         </div>
       </div>
 
-      <div className="w-full text-center text-white pt-1">
+      <div className="w-full text-center text-white pt-1 mt-1">
         {data.star === 5 ? (
-          <div className="flex justify-center items-center mr-1">
+          <div className="flex justify-center text-center items-center mr-1">
             <div>Top</div> {stars}
           </div>
         ) : (
-          <div>{stars}</div>
+          <div className='flex justify-center text-center items-center mr-1'>{stars}</div>
         )}
         <div className="flex items-center justify-evenly">
           <div className='flex-grow text-end'>{data.star}</div>
-          <div className='flex-grow text-start text-xs relative bottom-[1px]'>
+          <div className='flex-grow text-start text-xs relative bottom-[2px]'>
             <MdOutlineStarPurple500 color="yellow" />
           </div>
         </div>{' '}

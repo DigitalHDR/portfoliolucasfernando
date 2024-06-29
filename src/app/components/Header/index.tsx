@@ -12,11 +12,11 @@ const Header: React.FC = () => {
 
   return (
     <div className={`${darkMode && 'dark'}`}>
-      <nav className="flex-no-wrap absolute z-50 flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4">
+      <nav className="flex-no-wrap absolute z-50 flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-900 lg:flex-wrap lg:justify-start lg:py-4">
         <div className="container mx-auto flex w-full flex-wrap items-center justify-between">
           {/* <!-- Hamburger button for mobile view --> */}
           <button
-            className="block border-0 bg-transparent text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+            className="pl-3 block border-0 bg-transparent text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
             type="button"
             data-twe-collapse-init
             data-twe-target="#navbarSupportedContent1"
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
             aria-label="Toggle navigation"
           >
             {/* <!-- Hamburger icon --> */}
-            <span className="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+            <span className=" [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
               <svg
                 clipRule="evenodd"
                 fillRule="evenodd"
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
               <li className="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
 
                 <a
-                  className="text-3xl font-bold text-black transition duration-200 hover:text-slate-500 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+                  className="pl-3 text-3xl font-bold text-black transition duration-200 hover:text-slate-500 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
                   href="#"
                   data-twe-nav-link-ref
                 >
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
 
           </div>
 
-          <div className="lg:flex ">
+          <div className="lg:flex pl-3">
             {navegacaoHeader.map((item: NavegacaoMapProps, index: number) => (
               <div
                 key={index}
@@ -99,7 +99,7 @@ const Header: React.FC = () => {
           {/* <!-- Right elements --> */}
           <div className="relative flex items-center">
             {/* svgs sun */}
-            <div onClick={() => setDarkMode(!darkMode)}>
+            <div className='pr-3' onClick={() => setDarkMode(!darkMode)}>
               {!darkMode ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

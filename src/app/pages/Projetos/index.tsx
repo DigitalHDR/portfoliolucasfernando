@@ -10,7 +10,7 @@ const Projetos: React.FC = () => {
       </div>
 
       <div data-aos="fade-up" data-aos-duration="3000">
-        <div className="grid grid-cols-[repeat(auto-fill,_minmax(230px,_1fr))] mt-8 gap-5 gap-y-5">
+        <div className="grid grid-cols-[repeat(auto-fill,_minmax(230px,_1fr))] gap-5 justify-items-center">
           {dataGeral.especificacao.map((data) => (
             <CardProjetos key={data.id} data={data} />
           ))}
