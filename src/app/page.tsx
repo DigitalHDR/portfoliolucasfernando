@@ -5,7 +5,8 @@ import Sobre from './pages/Sobre'
 import Skill from './pages/Skill'
 import Certificados from './pages/Certificados'
 import Projetos from './pages/Projetos'
-import Footer from './pages/Footer'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
   useEffect(() => {
@@ -16,6 +17,7 @@ export default function Home() {
       initTWE({ Tooltip, initTWE, Collapse, Dropdown })
     }
     init()
+    AOS.init()
   }, [])
 
   return (
