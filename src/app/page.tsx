@@ -17,9 +17,7 @@ export default function Home() {
       initTWE({ Tooltip, initTWE, Collapse, Dropdown })
     }
     init()
-    AOS.init({
-      once: false
-    })
+    AOS.init()
   }, [])
 
   return (

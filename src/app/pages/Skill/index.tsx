@@ -9,11 +9,13 @@ const Skill: React.FC = () => {
 
   return (
     <section className="mt-24 text-center" id="skill">
-      <div data-aos="zoom-out" data-aos-delay="200">
+      <div data-aos="fade-up" data-aos-delay="200">
         <h2>Lista de Skills Full-Stack</h2>
       </div>{' '}
       <br />
-      <div data-aos="flip-left">
+      <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
         <article className="flex justify-center flex-wrap">
           {dataBarraSkill.atributos.map(
             (item: SkillAttribute, index: number) => (

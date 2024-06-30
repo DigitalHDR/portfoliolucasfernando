@@ -5,7 +5,7 @@ import dataGeral from '@/app/data/dataGeral'
 const Projetos: React.FC = () => {
   return (
     <section className="mt-24" id="projetos">
-      <div data-aos="zoom-out" data-aos-delay="200">
+      <div data-aos="fade-up" data-aos-delay="200">
         <h2>Projetos</h2>
       </div>
 

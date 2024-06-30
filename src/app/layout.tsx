@@ -32,9 +32,9 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <Header />
+        {/* <Header /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )

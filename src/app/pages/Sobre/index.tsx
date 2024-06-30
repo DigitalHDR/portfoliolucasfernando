@@ -6,7 +6,7 @@ const Sobre: React.FC = () => {
       className="mt-24 flex justify-center flex-col items-center mb-10 px-3"
       id="sobre"
     >
-      <div data-aos="zoom-out" data-aos-delay="200">
+      <div data-aos="fade-up" data-aos-delay="200">
         <h2>Sobre</h2>
       </div>
 

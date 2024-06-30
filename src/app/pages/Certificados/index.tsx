@@ -7,12 +7,12 @@ import CardCertificados from '@/app/components/cardCertificados'
 
 const Certificados: React.FC = () => {
   return (
-    <section className="my-24" id="certificados">
-      <div data-aos="zoom-out" data-aos-delay="200">
+    <section className="my-24 px-3" id="certificados">
+      <div data-aos="fade-up" data-aos-delay="200">
         <h2 className="">Certificados</h2>
       </div>
 
-      <div data-aos="zoom-out-up" data-aos-delay="600">
+      <div data-aos="fade-up" data-aos-duration="3000">
         <CardCertificados />
       </div>
     </section>
