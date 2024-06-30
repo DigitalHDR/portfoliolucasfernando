@@ -72,7 +72,7 @@ const Header: React.FC = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col justify-center list-style-none lg:flex-row  lg:items-center">
+          <div className="flex flex-col pl-3 justify-center list-style-none lg:flex-row  lg:items-center">
             {navegacaoHeader.map((item: NavegacaoMapProps, index: number) => (
               <ul
                 key={index}
