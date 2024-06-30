@@ -25,21 +25,19 @@ const Header: React.FC = () => {
   }, [])
 
   return (
-    <div className={`${darkMode && 'dark'}`} id="perfil">
-      <nav className="flex-no-wrap absolute z-50 flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-900 lg:flex-wrap lg:justify-start lg:py-4">
+    <div className={`${darkMode ? 'dark' : ''}`} id="perfil">
+      <nav className="absolute z-50 flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-900 lg:flex-wrap lg:justify-start lg:py-4">
         <div className="container mx-auto flex w-full flex-wrap items-center justify-between">
-          {/* <!-- Hamburger button for mobile view --> */}
+          {/* Hamburger button for mobile view */}
           <button
             className="pl-3 block border-0 bg-transparent text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
             type="button"
-            data-twe-collapse-init
-            data-twe-target="#navbarSupportedContent1"
+            onClick={() => setMostraMenu(!mostraMenu)}
             aria-controls="navbarSupportedContent1"
-            aria-expanded="false"
+            aria-expanded={mostraMenu}
             aria-label="Toggle navigation"
           >
-            {/* <!-- Hamburger icon --> */}
-            <span className=" [&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+            <span className="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
               <svg
                 clipRule="evenodd"
                 fillRule="evenodd"
@@ -57,19 +55,16 @@ const Header: React.FC = () => {
           </button>
 
           <div
-            className="!visible hidden  basis-[100%] items-center lg:!flex lg:basis-auto"
+            className={`${
+              mostraMenu ? 'block' : 'hidden'
+            } w-full lg:flex lg:items-center lg:w-auto`}
             id="navbarSupportedContent1"
-            data-twe-collapse-item
           >
-            <ul
-              className="list-style-none me-auto flex flex-col ps-0 lg:flex-row"
-              data-twe-navbar-nav-ref
-            >
-              <li className="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+            <ul className="flex flex-col lg:flex-row list-style-none me-auto lg:items-center">
+              <li className="mb-4 lg:mb-0 lg:pe-2">
                 <a
                   className="pl-3 text-3xl font-bold text-black transition duration-200 hover:text-slate-500 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
                   href="#"
-                  data-twe-nav-link-ref
                 >
                   DigitalHDR
                 </a>
@@ -77,43 +72,30 @@ const Header: React.FC = () => {
             </ul>
           </div>
 
-          <div className="lg:flex pl-3" id={mostraMenu ? 'hidden' : ''}>
+          <div className="flex flex-col justify-center list-style-none lg:flex-row  lg:items-center">
             {navegacaoHeader.map((item: NavegacaoMapProps, index: number) => (
-              <div
+              <ul
                 key={index}
-                className="!visible hidden lg:!flex"
-                id="navbarSupportedContent1"
-                data-twe-collapse-item
+                className={`${
+                  mostraMenu ? 'block' : 'hidden'
+                } w-full lg:flex lg:items-center lg:w-auto`}
               >
-                {/* <!-- Left navigation links --> */}
-                <ul
-                  className="list-style-none items-center ps-0"
-                  data-twe-navbar-nav-ref
-                >
-                  <li
-                    className="mb-4 lg:mb-0 lg:pe-2 cursor-pointer"
-                    data-twe-nav-item-ref
+                <li className="mb-4 lg:mb-0 lg:pe-2 cursor-pointer">
+                  <ScrollLink
+                    onClick={() => setMostraMenu(false)}
+                    to={item.href}
+                    smooth={true}
+                    duration={1000}
+                    className="text-xl w-full cursor-pointer font-semibold text-black transition duration-200 hover:text-slate-500 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                   >
-                    <ScrollLink
-                      onClick={() => setMostraMenu(!mostraMenu)}
-                      to={item.href}
-                      smooth={true}
-                      duration={1000}
-                      className="text-xl cursor-pointer w-screen font-semibold text-black transition duration-200 hover:text-slate-500 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                      data-twe-nav-link-ref
-                    >
-                      {item.nome}
-                    </ScrollLink>
-                  </li>
-                </ul>
-                {/* <!-- Left links --> */}
-              </div>
+                    {item.nome}
+                  </ScrollLink>
+                </li>
+              </ul>
             ))}
           </div>
 
-          {/* <!-- Right elements --> */}
           <div className="relative flex items-center">
-            {/* svgs sun */}
             <div
               className="pr-3 cursor-pointer"
               onClick={() => setDarkMode(!darkMode)}
@@ -126,7 +108,6 @@ const Header: React.FC = () => {
                   strokeWidth={1.5}
                   stroke="currentColor"
                   className="size-8 animate-spin"
-                  // color='yellow'
                 >
                   <path
                     strokeLinecap="round"
@@ -165,14 +146,7 @@ const Header: React.FC = () => {
                 role="button"
                 data-twe-dropdown-toggle-ref
                 aria-expanded="false"
-              >
-                {/* <img
-            src="https://tecdn.b-cdn.net/img/new/avatars/2.jpg"
-            className="rounded-full"
-            style="height: 25px; width: 25px"
-            alt=""
-            loading="lazy" /> */}
-              </a>
+              ></a>
             </div>
           </div>
         </div>
