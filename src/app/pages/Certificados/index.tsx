@@ -12,7 +12,7 @@ const Certificados: React.FC = () => {
         <h2 className="">Certificados</h2>
       </div>
 
-      <div data-aos="fade-up" data-aos-duration="3000">
+      <div data-aos="fade-right">
         <CardCertificados />
       </div>
     </section>
