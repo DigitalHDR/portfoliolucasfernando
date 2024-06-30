@@ -22,7 +22,7 @@ const Perfil: React.FC = () => {
         <div className="md:mr-8">
           <div data-aos="fade-right" data-aos-delay="300">
             <img
-              className="w-64 md:w-[350px]"
+              className="w-64 md:w-[350px] select-none"
               src="/lucas.png"
               alt="Descrição da imagem"
             />
@@ -30,7 +30,7 @@ const Perfil: React.FC = () => {
         </div>
         <div className="flex md:w-1/2 flex-col md:text-left">
           <div data-aos="fade-up">
-            <h3 className="text-center md:text-left text-lime-400 font-extrabold sm:text-3xl lg:text-5xl">
+            <h3 className="text-center select-none md:text-left text-lime-400 font-extrabold sm:text-3xl lg:text-5xl">
               Lucas Fernando
             </h3>
           </div>
