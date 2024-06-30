@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import dataBarraSkill, { SkillAttribute } from '../../data/dataBarraSkill'
 import Image from 'next/image'
+import { Climate_Crisis } from 'next/font/google'
 
 const Skill: React.FC = () => {
   const [passaMouseIndex, setPassaMouseIndex] = useState<number | null>(null)
@@ -25,7 +26,7 @@ const Skill: React.FC = () => {
                   <Image className='rounded-lg' src={item.img} width="100" height="100" alt="imagem" />
 
                   <div
-                    className="absolute justify-center items-center w-full h-full bg-body-dark sm:rounded-sm md:rounded-lg"
+                    className="absolute justify-center items-center w-full h-full bg-body-dark rounded-lg sm:rounded-sm md:rounded-lg"
                     style={{
                       display: passaMouseIndex === index ? 'flex' : 'none',
                     }}
@@ -45,3 +46,10 @@ const Skill: React.FC = () => {
 }
 
 export default Skill
+
+
+// hover tem que arrumar o caixa preto com texto colocar borser radius
+
+// menu posicionar para o link que Climate_Crisis
+
+// dark mode

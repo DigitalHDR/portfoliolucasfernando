@@ -1,6 +1,7 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import navegacaoHeader from '@/app/config/navegacaoHeader'
+import { Link as ScrollLink } from 'react-scroll'
 
 interface NavegacaoMapProps {
   nome: string
@@ -9,9 +10,23 @@ interface NavegacaoMapProps {
 
 const Header: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true)
+  const [mostraMenu, setMostraMenu] = useState<boolean>(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log('scrolling', window.scrollY)
+      if (window.scrollY > 1) {
+        setMostraMenu(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
-    <div className={`${darkMode && 'dark'}`}>
+    <div className={`${darkMode && 'dark'}`} id="perfil">
       <nav className="flex-no-wrap absolute z-50 flex w-full items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-900 lg:flex-wrap lg:justify-start lg:py-4">
         <div className="container mx-auto flex w-full flex-wrap items-center justify-between">
           {/* <!-- Hamburger button for mobile view --> */}
@@ -42,19 +57,16 @@ const Header: React.FC = () => {
             </span>
           </button>
 
-
           <div
             className="!visible hidden  basis-[100%] items-center lg:!flex lg:basis-auto"
             id="navbarSupportedContent1"
             data-twe-collapse-item
           >
-
             <ul
               className="list-style-none me-auto flex flex-col ps-0 lg:flex-row"
               data-twe-navbar-nav-ref
             >
               <li className="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
-
                 <a
                   className="pl-3 text-3xl font-bold text-black transition duration-200 hover:text-slate-500 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
                   href="#"
@@ -64,10 +76,9 @@ const Header: React.FC = () => {
                 </a>
               </li>
             </ul>
-
           </div>
 
-          <div className="lg:flex pl-3">
+          <div className="lg:flex pl-3" id={mostraMenu ? 'hidden' : ''}>
             {navegacaoHeader.map((item: NavegacaoMapProps, index: number) => (
               <div
                 key={index}
@@ -80,15 +91,20 @@ const Header: React.FC = () => {
                   className="list-style-none items-center ps-0"
                   data-twe-navbar-nav-ref
                 >
-                  <li className="mb-4 lg:mb-0 lg:pe-2 cursor-pointer" data-twe-nav-item-ref>
-                    {/* <!-- Dashboard link --> */}
-                    <a
+                  <li
+                    className="mb-4 lg:mb-0 lg:pe-2 cursor-pointer"
+                    data-twe-nav-item-ref
+                  >
+                    <ScrollLink
+                      onClick={() => setMostraMenu(!mostraMenu)}
+                      to={item.href}
+                      smooth={true}
+                      duration={1000}
                       className="text-xl cursor-pointer w-screen font-semibold text-black transition duration-200 hover:text-slate-500 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                      href="#"
                       data-twe-nav-link-ref
                     >
                       {item.nome}
-                    </a>
+                    </ScrollLink>
                   </li>
                 </ul>
                 {/* <!-- Left links --> */}
@@ -99,7 +115,10 @@ const Header: React.FC = () => {
           {/* <!-- Right elements --> */}
           <div className="relative flex items-center">
             {/* svgs sun */}
-            <div className='pr-3' onClick={() => setDarkMode(!darkMode)}>
+            <div
+              className="pr-3 cursor-pointer"
+              onClick={() => setDarkMode(!darkMode)}
+            >
               {!darkMode ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

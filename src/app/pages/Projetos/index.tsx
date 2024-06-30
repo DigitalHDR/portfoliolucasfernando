@@ -21,7 +21,3 @@ const Projetos: React.FC = () => {
 }
 
 export default Projetos
-
-
-
-// falta ver o tamanho da img, (@media 912 e 500 talvez não)
