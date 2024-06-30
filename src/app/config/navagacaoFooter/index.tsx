@@ -23,7 +23,7 @@ const navagacaoFooter: NavegacaoFooterProps[] = [
     nome: 'Github',
     href: 'https://github.com/DigitalHDR',
     icon: <BsGithub />,
-    color: '#ccc',
+    color: '#424242',
   },
 
   {

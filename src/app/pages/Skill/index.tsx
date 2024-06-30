@@ -18,7 +18,7 @@ const Skill: React.FC = () => {
             (item: SkillAttribute, index: number) => (
               <div className="containerSkill" key={index}>
                 <div
-                  className="flex items-center justify-center relative bg-white rounded-lg border-solid border-lime-400 border-[1px] sm:h-[150px] sm:w-[150px] md:h-[150px] md:w-[150px] mx-5 mb-5 transition duration-300 ease-in-out hover:scale-110 hover:border-[5px] shadow-lg shadow-slate-400 "
+                  className="flex items-center justify-center relative bg-white rounded-lg border-solid border-lime-400 border-[1px] sm:h-[150px] sm:w-[150px] md:h-[150px] md:w-[150px] mx-5 mb-5 shadow-slate-400 hover:scale-110 transition duration-300 ease-in-out shadow-lg hover:shadow-lime-400"
                   onMouseEnter={() => setPassaMouseIndex(index)}
                   onMouseLeave={() => setPassaMouseIndex(null)}
                 >

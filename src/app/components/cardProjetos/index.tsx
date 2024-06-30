@@ -39,7 +39,7 @@ const CardProjetos: React.FC<CardProjetosProps> = ({ data }) => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center max-w-60 bg-neutral-700 sm:px-3 sm:py-3 transition duration-300 ease-in-out hover:scale-110 hover:border-[1px] my-5 rounded-lg  border-lime-400 hover:shadow-lg hover:shadow-lime-400">
+    <div className="flex flex-col justify-center items-center max-w-60 bg-neutral-700 sm:px-3 sm:py-3 hover:border-[1px] my-5 rounded-lg  border-lime-400 hover:scale-105 transition duration-300 ease-in-out shadow-lg hover:shadow-lime-400">
       <div className="relative h-auto border-solid boder-[2px] border-lime-400">
         <img
           className="w-[218px] h-[80px] sm:h-[127px] rounded-[15px] px-1 py-1"
