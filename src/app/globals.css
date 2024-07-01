@@ -60,3 +60,15 @@ h2 {
     -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000,
     -1px 0px 0 #000000, 0px -1px 0 #000000;
 }
+
+
+/* styles.css */
+.light-mode #wheel,
+.light-mode #mouse {
+  stroke: #000; /* Cor para modo claro */
+}
+
+.dark-mode #wheel,
+.dark-mode #mouse {
+  stroke: #fff; /* Cor para modo escuro */
+}
