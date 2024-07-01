@@ -53,7 +53,7 @@ const CardProjetos: React.FC<CardProjetosProps> = ({ data }) => {
         </div>
       </div>
 
-      <div className="w-full text-center text-white text-sm sm:text-lg pt-1 mt-1">
+      <div className="w-full text-center text-white dark:text-white/90 text-sm sm:text-lg pt-1 mt-1">
         {data.star === 5 ? (
           <div className="flex justify-center  text-center items-center mr-1">
             <div>Top</div> {stars}
@@ -75,7 +75,7 @@ const CardProjetos: React.FC<CardProjetosProps> = ({ data }) => {
         <h5 className="text-center text-sm sm:text-lg text-lime-400 font-extralight">
           {data.title}
         </h5>
-        <p className="text-white/60 font-extralight hidden sm:flex text-center">
+        <p className="text-white dark:text-white/90 font-extralight hidden sm:flex text-center">
           {renderizarDescricao(data.desc)}
         </p>
       </div>

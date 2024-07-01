@@ -15,10 +15,10 @@ const Perfil: React.FC = () => {
 
   return (
     <section
-      className="h-screen pt-[15%] flex flex-col justify-between relative px-3"
+      className="h-screen pt-[15%] flex flex-col justify-between relative px-3 "
       id="perfil"
     >
-      <article className="w-full flex flex-col md:flex-row items-center justify-between px-3 text-gray-500 sm:text-lg xl:text-2xl font-medium">
+      <article className="w-full flex flex-col md:flex-row items-center justify-between px-3 text-gray-500 dark:text-zinc-100 sm:text-lg xl:text-2xl font-medium">
         <div className="md:mr-8">
           <div data-aos="fade-right" data-aos-delay="300">
             <img
