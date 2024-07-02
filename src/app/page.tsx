@@ -5,8 +5,8 @@ import Sobre from './pages/Sobre'
 import Skill from './pages/Skill'
 import Certificados from './pages/Certificados'
 import Projetos from './pages/Projetos'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Home() {
   useEffect(() => {
@@ -22,11 +22,16 @@ export default function Home() {
 
   return (
     <main className="container mx-auto">
-      <Perfil />
-      <Sobre />
-      <Skill />
-      <Certificados />
-      <Projetos />
+        <Perfil />
+        <Sobre />
+        <Skill />
+        <Certificados />
+        <Projetos />
     </main>
   )
 }
+
+// comprar um dominio pra mim
+// next e prev do carosel
+// link dim curriculo
+// implementar teste unitarios

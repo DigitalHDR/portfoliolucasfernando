@@ -4,12 +4,15 @@ import Slider from 'react-slick'
 import settings from '@/app/config/sliderConfig'
 import dataCertificado from '@/app/data/dataCertificado'
 import Botao from '../botao/intex'
+import { useTheme } from 'next-themes'
 
 const CardCertificados = () => {
+  const { theme } = useTheme()
+
   return (
     <section className="flex justify-center">
       <article className="rounded-lg w-[75vw]">
-        <Slider {...settings}>
+        <Slider {...settings} className={theme === 'dark' ? 'slider-dark' : ''}>
           {dataCertificado.certificado.map((item, index) => (
             <div
               key={index}
