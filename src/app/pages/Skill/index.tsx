@@ -48,10 +48,3 @@ const Skill: React.FC = () => {
 }
 
 export default Skill
-
-
-// hover tem que arrumar o caixa preto com texto colocar borser radius
-
-// menu posicionar para o link que Climate_Crisis
-
-// dark mode

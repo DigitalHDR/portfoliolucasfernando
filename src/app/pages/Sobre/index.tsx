@@ -16,7 +16,7 @@ const Sobre: React.FC = () => {
             Sou um desenvolvedor <span className="span">web e mobile</span> com
             experiência em diversas tecnologias modernas. Trabalho
             principalmente com <span className="span">HTML</span>,{' '}
-            <span className="span">CSS</span>, 
+            <span className="span">CSS</span>,
             <span className="span"> Tailwind</span> e
             <span className="span"> JavaScript</span> para criar interfaces web
             interativas e responsivas. Tenho proficiência em{' '}

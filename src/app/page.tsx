@@ -32,6 +32,5 @@ export default function Home() {
 }
 
 // comprar um dominio pra mim
-// next e prev do carosel
 // link dim curriculo
 // implementar teste unitarios
