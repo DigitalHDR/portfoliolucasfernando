@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <article className="flex justify-center flex-col items-center text-center">
         <h2>Desenvolvedor FullStack</h2>
         <div className="mt-6 flex items-center justify-between flex-col flex-wrap">
-
+          <span className='text-black dark:text-white/90'>Contatos</span>
           <MidiaSocial />
           <p className='text-black dark:text-white/90 mt-5'>&copy; Copyright 2024</p>
         </div>
