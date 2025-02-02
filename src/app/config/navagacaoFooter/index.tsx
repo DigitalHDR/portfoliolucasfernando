@@ -26,13 +26,13 @@ const navagacaoFooter: NavegacaoFooterProps[] = [
     color: '#424242',
   },
 
-  {
-    id: 3,
-    nome: 'Whatsapp',
-    href: 'https://api.whatsapp.com/send?phone=5518997704896',
-    icon: <BsWhatsapp />,
-    color: '#20ba2a',
-  },
+  // {
+  //   id: 3,
+  //   nome: 'Whatsapp',
+  //   href: 'https://api.whatsapp.com/send?phone=5518997704896',
+  //   icon: <BsWhatsapp />,
+  //   color: '#20ba2a',
+  // },
 ]
 
 export default navagacaoFooter
