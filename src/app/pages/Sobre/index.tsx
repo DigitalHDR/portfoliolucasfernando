@@ -32,7 +32,8 @@ const Sobre: React.FC = () => {
             nativos para <span className="span">iOS</span> e{' '}
             <span className="span">Android</span>. Minha experiência inclui o
             uso de <span className="span">bancos de dados NoSQL</span> como{' '}
-            <span className="span">MongoDB</span> para armazenamento e
+            <span className="span">MongoDB</span> e bancos de dados SQL no caso{' '}
+            <span className="span">PostgreSQL</span> para armazenamento e
             gerenciamento de dados de aplicativos{' '}
             <span className="span">web e mobile</span>. Estou sempre buscando
             aprender e me atualizar com as últimas tecnologias e tendências no

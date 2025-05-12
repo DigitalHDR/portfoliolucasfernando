@@ -116,6 +116,12 @@ const dataBarraSkill = {
       title: 'FIGMA',
       img: '/figma.png',
     },
+    {
+      id: 19,
+      done: 90,
+      title: 'POSTGRESQL',
+      img: '/postgresql.png',
+    },
   ],
 }
 
