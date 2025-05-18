@@ -25,7 +25,7 @@ export default function Home() {
         <Perfil />
         <Sobre />
         <Skill />
-        <Certificados />
+        {/* <Certificados /> */}
         <Projetos />
     </main>
   )

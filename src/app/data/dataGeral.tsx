@@ -15,6 +15,15 @@ export interface EspecificacaoProps {
 const dataGeral: EspecificacaoProps = {
   especificacao: [
     {
+      id: 0,
+      star: 5,
+      type: 'react',
+      img: 'https://i.postimg.cc/pVS2krDD/Captura-de-tela-2025-05-18-185622.png',
+      title: 'Pokedex 3D',
+      desc: 'Next, Tailwind, Typescript',
+      url: 'https://pokehdr3d.vercel.app/',
+    },
+    {
       id: 1,
       star: 5,
       type: 'react',
@@ -26,12 +35,22 @@ const dataGeral: EspecificacaoProps = {
     {
       id: 2,
       star: 5,
-      type: 'html-css-javascrip',
-      img: 'https://i.postimg.cc/RVq654z0/ecomerce-6e2d2577.jpg',
-      title: 'E-commerce',
-      desc: 'Foi usando html, Css e JavaScript dark-mode, svg eu fiz, usei display grid no projeto',
-      url: 'https://compassionate-lalande-f24683.netlify.app/',
+      type: 'react',
+      img: '/foodi.png',
+      title: 'Foodi',
+      desc: 'React, Node, mongoDB, express API, ',
+      url: 'https://665a9e6d0761ddee9fb9b39b--inquisitive-dusk-6bd7f5.netlify.app/',
     },
+    {
+      id: 58,
+      star: 5,
+      type: 'react',
+      img: 'https://i.postimg.cc/WzYcHWFN/Captura-de-tela-2025-05-18-184418.png',
+      title: 'Lista de usuários com Filtros',
+      desc: 'React, Node, express',
+      url: 'https://betalent-frontend-backend.vercel.app/',
+    },
+
     {
       id: 3,
       star: 5,
@@ -72,13 +91,70 @@ const dataGeral: EspecificacaoProps = {
       id: 7,
       star: 5,
       type: 'react',
+      img: '/Prime-Flix.png',
+      title: 'Prime Flix',
+      desc: 'React, Node, mongoDB, express API, ',
+      url: 'https://665a9ab8b78f7047116c2b78--fantastic-bublanina-9d351d.netlify.app/',
+    },
+    {
+      id: 8,
+      star: 5,
+      type: 'react',
+      img: 'https://i.postimg.cc/VkdMpPZn/ecoomerce.png',
+      title: 'Ecommerce React Redux api',
+      desc: 'React.js, API, Redux, React router, Bootstrap',
+      url: 'https://modest-shaw-65e43d.netlify.app',
+    },
+  
+    {
+      id: 10,
+      star: 5,
+      type: 'react',
       img: 'https://i.postimg.cc/fbDM9nZL/xaasasasasas.png',
       title: 'React / Next.js e-commerce',
       desc: 'React, API, MUI material',
       url: 'https://next-amazon-digitalhdr.vercel.app/',
     },
     {
-      id: 8,
+      id: 11,
+      star: 5,
+      type: 'html-css-javascrip',
+      img: 'https://i.postimg.cc/RVq654z0/ecomerce-6e2d2577.jpg',
+      title: 'E-commerce',
+      desc: 'Foi usando html, Css e JavaScript dark-mode, svg eu fiz, usei display grid no projeto',
+      url: 'https://compassionate-lalande-f24683.netlify.app/',
+    },
+
+    {
+      id: 12,
+      star: 5,
+      type: 'html-css-javascrip',
+      img: 'https://i.postimg.cc/hGG6rJQ7/123.png',
+      title: 'Lista de Produção de video',
+      desc: 'Html, Css, JavaScript',
+      url: 'https://brave-golick-5e9fc2.netlify.app/',
+    },
+
+    {
+      id: 13,
+      star: 5,
+      type: 'html-css-javascrip',
+      img: 'https://i.postimg.cc/5tTg378C/Artboard-12.png',
+      title: 'Site Sobre Lobos',
+      desc: 'Html e css ',
+      url: 'https://deft-sopapillas-86f407.netlify.app/',
+    },
+          {
+      id: 9,
+      star: 4,
+      type: 'html-css-javascrip',
+      img: '/slider-javascript-com-onmouse.png',
+      title: 'Slider javascript com OnMouse',
+      desc: 'Hmlt css e javascrip,',
+      url: 'https://665aa7f6f499d1f91523810f--resonant-tiramisu-89bbb2.netlify.app/',
+    },
+    {
+      id: 14,
       star: 5,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/3RR74r14/transferir-5.jpg',
@@ -87,25 +163,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://stoic-tesla-784f30.netlify.app/',
     },
     {
-      id: 9,
-      star: 5,
-      type: 'html-css-javascrip',
-      img: 'https://i.postimg.cc/hGG6rJQ7/123.png',
-      title: 'Lista de Produção de video',
-      desc: 'Html, Css, JavaScript',
-      url: 'https://brave-golick-5e9fc2.netlify.app/',
-    },
-    {
-      id: 10,
-      star: 5,
-      type: 'html-css-javascrip',
-      img: 'https://i.postimg.cc/5tTg378C/Artboard-12.png',
-      title: 'Site Sobre Lobos',
-      desc: 'Html e css ',
-      url: 'https://deft-sopapillas-86f407.netlify.app/',
-    },
-    {
-      id: 11,
+      id: 15,
       star: 5,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/jSM01WPH/vcxvcxv.png',
@@ -114,7 +172,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://jovial-cupcake-06429e.netlify.app/',
     },
     {
-      id: 12,
+      id: 16,
       star: 5,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/G3grg6d4/3333333333333333.png',
@@ -122,35 +180,9 @@ const dataGeral: EspecificacaoProps = {
       desc: 'html e css',
       url: 'https://statuesque-cocada-3152e6.netlify.app/',
     },
+
     {
-      id: 13,
-      star: 5,
-      type: 'react',
-      img: '/foodi.png',
-      title: 'Foodi',
-      desc: 'React, Node, mongoDB, express API, ',
-      url: 'https://665a9e6d0761ddee9fb9b39b--inquisitive-dusk-6bd7f5.netlify.app/',
-    },
-    {
-      id: 14,
-      star: 5,
-      type: 'react',
-      img: '/Prime-Flix.png',
-      title: 'Prime Flix',
-      desc: 'React, Node, mongoDB, express API, ',
-      url: 'https://665a9ab8b78f7047116c2b78--fantastic-bublanina-9d351d.netlify.app/',
-    },
-    {
-      id: 15,
-      star: 5,
-      type: 'react',
-      img: 'https://i.postimg.cc/VkdMpPZn/ecoomerce.png',
-      title: 'Ecommerce React Redux api',
-      desc: 'React.js, API, Redux, React router, Bootstrap',
-      url: 'https://modest-shaw-65e43d.netlify.app',
-    },
-    {
-      id: 16,
+      id: 17,
       star: 4,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/cJGrn3tK/transferir.jpg',
@@ -159,7 +191,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://blissful-einstein-fa1a9f.netlify.app/',
     },
     {
-      id: 17,
+      id: 18,
       star: 4,
       type: 'react',
       img: 'https://i.postimg.cc/XYxGZ2BB/shopcard.png',
@@ -168,7 +200,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://focused-volhard-7869df.netlify.app/',
     },
     {
-      id: 18,
+      id: 19,
       star: 4,
       type: 'html-css-javascrip',
       img: '/formulario-html-javascrip.png',
@@ -177,22 +209,13 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665aa2b17ea6b0e83661462b--kaleidoscopic-beignet-1abcad.netlify.app/',
     },
     {
-      id: 19,
+      id: 20,
       star: 4,
       type: 'html-css-javascrip',
       img: '/Processo-de-etapas.png',
       title: 'Processo de etapas',
       desc: 'Hmlt css e javascrip,',
       url: 'https://665aa49682d8ef4c79759cfb--grand-malabi-456dd1.netlify.app/',
-    },
-    {
-      id: 20,
-      star: 4,
-      type: 'react',
-      img: 'https://i.postimg.cc/ht8dPFYF/Artboard-1.png',
-      title: 'Redux carrinho de compra',
-      desc: 'React, API local, Redux, React router, immer',
-      url: 'https://brave-golick-5e9fc2.netlify.app/',
     },
     {
       id: 21,
@@ -257,17 +280,9 @@ const dataGeral: EspecificacaoProps = {
       desc: 'React, Node, mongoDB, express API, ',
       url: 'https://665aa1b26690d5edc8cfb87a--elegant-kheer-8fbd1c.netlify.app/',
     },
+
     {
       id: 28,
-      star: 4,
-      type: 'html-css-javascrip',
-      img: '/slider-javascript-com-onmouse.png',
-      title: 'Slider javascript com OnMouse',
-      desc: 'Hmlt css e javascrip,',
-      url: 'https://665aa7f6f499d1f91523810f--resonant-tiramisu-89bbb2.netlify.app/',
-    },
-    {
-      id: 29,
       star: 4,
       type: 'html-css-javascrip',
       img: '/Card-Imagem-expansivo.png',
@@ -276,7 +291,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665aaf610761ddfc74b9b0d8--superb-croquembouche-5fab1f.netlify.app/',
     },
     {
-      id: 30,
+      id: 29,
       star: 4,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/DfPkgjnH/11.png',
@@ -285,7 +300,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://heroic-taffy-9496d6.netlify.app/',
     },
     {
-      id: 31,
+      id: 30,
       star: 3,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/zB0wDbsJ/22.png',
@@ -294,7 +309,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://majestic-seahorse-2fc251.netlify.app/',
     },
     {
-      id: 32,
+      id: 31,
       star: 3,
       type: 'reahtml-css-javascripct',
       img: 'https://i.postimg.cc/8kXq4D4Y/wwwwwww.png',
@@ -303,7 +318,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://extraordinary-tapioca-32a1ec.netlify.app/',
     },
     {
-      id: 33,
+      id: 32,
       star: 3,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/t7G6HJW5/xxxxxxxxxx.png',
@@ -312,7 +327,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://euphonious-marigold-acc28e.netlify.app/',
     },
     {
-      id: 34,
+      id: 33,
       star: 3,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/Y0Tpwc14/transferir-2.jpg',
@@ -321,7 +336,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://gracious-roentgen-8fb3e3.netlify.app/',
     },
     {
-      id: 35,
+      id: 34,
       star: 4,
       type: 'html-css-javascrip',
       img: '/Controle-deslizante-de-faixa.png',
@@ -330,7 +345,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665ab5407ea6b0f59a614580--joyful-ganache-fc5308.netlify.app/',
     },
     {
-      id: 36,
+      id: 35,
       star: 4,
       type: 'html-css-javascrip',
       img: '/Simple-Product-Card.png',
@@ -339,7 +354,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665ab0bec001c3fee9e43898--lovely-tapioca-71fe95.netlify.app/',
     },
     {
-      id: 37,
+      id: 36,
       star: 3,
       type: 'html-css-javascrip',
       img: '/Card-hover-texto-em-baixo.png',
@@ -348,7 +363,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665aae861ce667f9a22f8abb--golden-dusk-6b5db6.netlify.app/',
     },
     {
-      id: 38,
+      id: 37,
       star: 3,
       type: 'html-css-javascrip',
       img: '/aceitar-cookei.png',
@@ -357,7 +372,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665aa38777ed45f18828f1d4--iridescent-basbousa-7a6acf.netlify.app/',
     },
     {
-      id: 39,
+      id: 38,
       star: 3,
       type: 'html-css-javascrip',
       img: '/Contador-de-inicio.png',
@@ -366,7 +381,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665aa5d34edce3835cf27877--serene-snickerdoodle-6196a5.netlify.app/',
     },
     {
-      id: 40,
+      id: 39,
       star: 3,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/rmFy1NVp/scroll-29f800c6.jpg',
@@ -375,7 +390,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://dreamy-mahavira-2bdfbf.netlify.app/',
     },
     {
-      id: 41,
+      id: 40,
       star: 3,
       type: 'react',
       img: 'https://i.postimg.cc/L4z7M26h/sdsdsd.png',
@@ -384,7 +399,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://moonlit-gelato-a29881.netlify.app/',
     },
     {
-      id: 42,
+      id: 41,
       star: 3,
       type: 'reahtml-css-javascripct',
       img: 'https://i.postimg.cc/YCN57FN4/12121212.png',
@@ -393,7 +408,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://jolly-frangollo-8f930b.netlify.app/',
     },
     {
-      id: 43,
+      id: 42,
       star: 3,
       type: 'html-css-javascrip',
       img: '/input-range-personalizado.png',
@@ -402,7 +417,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665aa76d7c16714c87c02ced--verdant-lollipop-3e4e98.netlify.app/',
     },
     {
-      id: 44,
+      id: 43,
       star: 3,
       type: 'html-css-javascrip',
       img: '/barra-de-progresso-animada.png',
@@ -411,7 +426,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665ab3baf499d101da237f95--relaxed-daffodil-33763d.netlify.app/',
     },
     {
-      id: 45,
+      id: 44,
       star: 3,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/jdBpqGXW/Artboard-2.png',
@@ -420,7 +435,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://benevolent-profiterole-d379c8.netlify.app/',
     },
     {
-      id: 46,
+      id: 45,
       star: 3,
       type: 'html-css-javascrip',
       img: '/card-personalizado-com-musica.png',
@@ -429,7 +444,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665aac9737abf6f694ca267c--ubiquitous-chaja-e2bcaa.netlify.app/',
     },
     {
-      id: 47,
+      id: 46,
       star: 3,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/SKZhZTCy/Artboard-1.png',
@@ -438,7 +453,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://genuine-smakager-efff00.netlify.app/',
     },
     {
-      id: 48,
+      id: 47,
       star: 3,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/MH88SJ3w/44444444.png',
@@ -447,7 +462,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://benevolent-hummingbird-62f130.netlify.app/',
     },
     {
-      id: 49,
+      id: 48,
       star: 2,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/jSgjHC2F/llllllllllllll.png',
@@ -456,7 +471,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://gilded-capybara-a3f7fa.netlify.app/',
     },
     {
-      id: 50,
+      id: 49,
       star: 3,
       type: 'html-css-javascrip',
       img: '/Menu-Vertical.png',
@@ -465,7 +480,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665ab79c37abf6fd8fca1c66--zingy-syrniki-7a6e48.netlify.app/',
     },
     {
-      id: 51,
+      id: 50,
       star: 3,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/FsVbWSBT/Artboard-3.png',
@@ -474,7 +489,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://spectacular-pegasus-0b8a7e.netlify.app/',
     },
     {
-      id: 52,
+      id: 51,
       star: 2,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/N0QQtkrx/transferir-4.jpg',
@@ -483,7 +498,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://competent-agnesi-6cc97f.netlify.app/',
     },
     {
-      id: 53,
+      id: 52,
       star: 2,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/fRnw2Nzp/transferir-3.jpg',
@@ -492,7 +507,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://musing-mcnulty-daed67.netlify.app/',
     },
     {
-      id: 54,
+      id: 53,
       star: 2,
       type: 'html-css-javascrip',
       img: '/Loading-Css-Puro.png',
@@ -501,7 +516,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665aadcbc9ce7aeedefe7aaa--spectacular-tarsier-9dc81d.netlify.app/',
     },
     {
-      id: 55,
+      id: 54,
       star: 2,
       type: 'html-css-javascrip',
       img: '/Muda-cor-de-algo.png',
@@ -510,7 +525,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665aa6ad2a91434e1aa2b458--regal-youtiao-de0de3.netlify.app/',
     },
     {
-      id: 56,
+      id: 55,
       star: 2,
       type: 'html-css-javascrip',
       img: '/Checkbox-custumizado-luz-neon.png',
@@ -519,7 +534,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665ab233979a3e55ffb1f13d--vermillion-marshmallow-aa5708.netlify.app/',
     },
     {
-      id: 57,
+      id: 56,
       star: 2,
       type: 'html-css-javascrip',
       img: '/Projeto-Cronometro.png',
@@ -528,7 +543,7 @@ const dataGeral: EspecificacaoProps = {
       url: 'https://665ab4ae979a3e5850b1f0e2--magnificent-unicorn-674f77.netlify.app/',
     },
     {
-      id: 58,
+      id: 57,
       star: 2,
       type: 'html-css-javascrip',
       img: 'https://i.postimg.cc/yd7Ws3WL/zzzzzzz.png',
