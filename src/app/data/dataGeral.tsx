@@ -21,7 +21,8 @@ const dataGeral: EspecificacaoProps = {
       img: 'https://i.postimg.cc/pVS2krDD/Captura-de-tela-2025-05-18-185622.png',
       title: 'Pokedex 3D',
       desc: 'Next, Tailwind, Typescript',
-      url: 'https://pokehdr3d.vercel.app/',
+      url: '#',
+      // url: 'https://pokehdr3d.vercel.app/',
     },
     {
       id: 1,
