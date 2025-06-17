@@ -20,9 +20,8 @@ const dataGeral: EspecificacaoProps = {
       type: 'react',
       img: 'https://i.postimg.cc/pVS2krDD/Captura-de-tela-2025-05-18-185622.png',
       title: 'Pokedex 3D',
-      desc: 'Next, Tailwind, Typescript',
-      url: '#',
-      // url: 'https://pokehdr3d.vercel.app/',
+      desc: 'EM FASE DE DESENVOLVIMENTO',
+      url: 'https://pokehdr3d.vercel.app/',
     },
     {
       id: 1,
