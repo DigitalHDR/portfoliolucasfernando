@@ -48,7 +48,7 @@ const CardProjetos: React.FC<CardProjetosProps> = ({ data }) => {
         />
         <div className="absolute right-[4px] top-[38px] w-8 sm:w-16 rounded-[40px] bg-black flex justify-center items-center border-solid boder-[1px] border-lime-400">
           <div className="text-lime-400 text-sm sm:text-lg sm:font-extrabold">
-            {data.id}
+            {/* {data.id} */}
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ const Projetos: React.FC = () => {
   return (
     <section className="mt-24" id="projetos">
       <div data-aos="fade-up" data-aos-delay="200">
-        <h2>Projetos</h2>
+        <h2>Projetos Última atualização 17/06/25</h2>
       </div>
 
       <div data-aos="fade" data-aos-duration="1000">
